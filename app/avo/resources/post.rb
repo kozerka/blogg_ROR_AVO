@@ -13,5 +13,7 @@ class Avo::Resources::Post < Avo::BaseResource
     field :category, as: :belongs_to
     field :user, name: :author, as: :belongs_to
     field :faqs, as: :has_and_belongs_to_many
+    field :image, as: :file
+
   end
 end

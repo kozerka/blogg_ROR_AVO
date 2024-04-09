@@ -8,7 +8,7 @@ class Avo::Resources::Faq < Avo::BaseResource
   def fields
     field :id, as: :id
     field :title, as: :text
-    field :body, as: :textarea
+    field :body, as: :trix
     field :posts, as: :has_and_belongs_to_many
   end
 end

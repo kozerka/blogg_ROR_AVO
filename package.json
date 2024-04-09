@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "esbuild": "^0.20.2",
     "flowbite": "^2.3.0"
   }
 }

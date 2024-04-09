@@ -68,3 +68,5 @@ end
 gem "avo", ">= 3.2"
 
 gem "tailwindcss-rails", "~> 2.3"
+
+gem "ransack"

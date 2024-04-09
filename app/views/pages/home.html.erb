@@ -12,7 +12,7 @@
       </h2>
       <div id="accordion-collapse-body-<%= index %>" class="hidden" aria-labelledby="accordion-collapse-heading-<%= index %>" data-accordion-content>
         <div class="p-5 border borderborder-gray-200">
-          <div class="mb-8"><%= sanitize faq.body %></div>
+          <div class="mb-8 px-4 prose max-w-[800px] mx-auto "><%= sanitize faq.body %></div>
           <h3 class="font-bold mb-4">Related Articles</h3>
           <% faq.posts.each do |post| %>
             <!-- Miniaturka lub link do posta -->

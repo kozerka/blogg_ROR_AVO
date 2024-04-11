@@ -1,9 +1,13 @@
 <div class="bg-gray-100 p-4 rounded-md mb-4">
   <h1 class="text-3xl font-bold text-gray-800"><%= sanitize @post.title %></h1>
 </div>
-
 <div class="prose prose-lg max-w-none">
   <%= sanitize @post.body %>
+
+  <% if @post.image.attached? %>
+    <%= image_tag @post.image %>
+  <% end %>
+
   <% if @post.image.attached? %>
     <%= image_tag @post.image %>
   <% end %>

@@ -9,7 +9,7 @@ class Avo::Resources::Post < Avo::BaseResource
     field :id, as: :id
     field :title, as: :text
     field :excerpt, as: :text, only_on: :index
-    field :body, as: :trix
+    field :body, as: :trix, attachment_key: :trix_attachments
     field :category, as: :belongs_to
     field :user, name: :author, as: :belongs_to
     field :faqs, as: :has_and_belongs_to_many
